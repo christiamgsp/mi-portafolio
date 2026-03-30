@@ -1,0 +1,125 @@
+// src/data.js
+export const perfil = {
+  nombre: 'Christiam Gabriel Silva Parra',
+  titulo: 'Frontend Engineer | AI Specialist | Bilingual (English C1)',
+  frase:
+    '10+ años de experiencia en IT evolucionando hacia el desarrollo Frontend. Especialista en ecosistemas React y optimización de flujos de trabajo con Inteligencia Artificial.',
+  linkedin: 'https://linkedin.com/in/tu-perfil',
+  github: 'https://github.com/christiamgsp',
+  foto: '/pdfs/foto-perfil.jpg',
+};
+
+export const certificaciones = [
+  {
+    id: 1,
+    titulo: 'Claude IA para Developers',
+    academia: 'Platzi',
+    fecha: 'Marzo 2026',
+    link: '/pdfs/diploma-claude.pdf',
+    categoria: 'AI',
+  },
+  {
+    id: 2,
+    titulo: 'Herramientas de AI para Developers',
+    academia: 'Platzi',
+    fecha: 'Feb 2026',
+    link: '/pdfs/diploma-herramientas-ai-developers-2024.pdf',
+    categoria: 'AI',
+  },
+  {
+    id: 3,
+    titulo: 'Prompt Engineering',
+    academia: 'Platzi',
+    fecha: 'Feb 2026',
+    link: '/pdfs/diploma-prompt-engineering.pdf',
+    categoria: 'AI',
+  },
+  {
+    id: 4,
+    titulo: 'React Avanzado',
+    academia: 'Platzi',
+    fecha: 'Oct 2025',
+    link: '/pdfs/diploma-react-avanzado.pdf',
+    categoria: 'React',
+  },
+  {
+    id: 5,
+    titulo: 'React Server Side Rendering (SSR)',
+    academia: 'Platzi',
+    fecha: 'Oct 2025',
+    link: '/pdfs/diploma-react-ssr.pdf',
+    categoria: 'React',
+  },
+  {
+    id: 6,
+    titulo: 'React Testing Library',
+    academia: 'Platzi',
+    fecha: 'Junio 2025',
+    link: '/pdfs/diploma-react-testing-library.pdf',
+    categoria: 'React',
+  },
+  {
+    id: 7,
+    titulo: 'React con TypeScript',
+    academia: 'Platzi',
+    fecha: 'Mayo 2024',
+    link: '/pdfs/diploma-react-typescript.pdf',
+    categoria: 'React',
+  },
+  {
+    id: 8,
+    titulo: 'Frontend Developer',
+    academia: 'Platzi',
+    fecha: 'Marzo 2023',
+    link: '/pdfs/diploma-frontend-developer.pdf',
+    categoria: 'Frontend',
+  },
+  {
+    id: 9,
+    titulo: 'Tailwind CSS',
+    academia: 'Platzi',
+    fecha: 'Agosto 2025',
+    link: '/pdfs/diploma-tailwindcss.pdf',
+    categoria: 'Design',
+  },
+  {
+    id: 10,
+    titulo: 'Figma: Sistemas de Diseño',
+    academia: 'Platzi',
+    fecha: 'Enero 2026',
+    link: '/pdfs/diploma-figma-sistemas-diseno.pdf',
+    categoria: 'Design',
+  },
+  {
+    id: 11,
+    titulo: 'Git y GitHub Profesional',
+    academia: 'Platzi',
+    fecha: 'Junio 2025',
+    link: '/pdfs/diploma-gitgithub.pdf',
+    categoria: 'Tools',
+  },
+];
+
+export const proyectos = [
+  {
+    id: 1,
+    nombre: 'Modern E-commerce + IA',
+    desc: 'E-commerce bilingüe con agentes de IA integrados para soporte y recomendaciones.',
+    stack: ['React', 'OpenAI API', 'Tailwind', 'TS'],
+    github: 'https://github.com/christiamgsp/modern-ecommerce-react-IA',
+  },
+  {
+    id: 2,
+    nombre: 'OrganizeMe',
+    desc: 'Gestor de tareas avanzado con persistencia y lógica de estados complejos.',
+    stack: ['React', 'Tailwind', 'Testing'],
+    github: 'https://github.com/christiamgsp/OrganizeMe',
+  },
+  {
+    id: 3,
+    nombre: 'TareApp',
+    desc: 'Aplicación optimizada para la gestión de tareas diarias con enfoque en UX.',
+    stack: ['React', 'LocalStorage', 'CSS'],
+    github: 'https://github.com/christiamgsp/tareapp',
+  },
+];
