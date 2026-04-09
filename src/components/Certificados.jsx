@@ -2,9 +2,9 @@ import React from 'react';
 import { certificaciones } from '../data';
 
 const Certificados = () => (
-  <section className='py-16'>
-    <div className='container mx-auto px-4 max-w-5xl'>
-      <h2 className='text-2xl font-black text-white tracking-tighter mb-10 uppercase border-l-4 border-purple-500 pl-4'>
+  <section className='py-16 bg-[#0A0A0A]'>
+    <div className='container mx-auto px-6 max-w-5xl'>
+      <h2 className='text-2xl font-black text-white tracking-tighter mb-10 uppercase border-l-4 border-[#00E6FF] pl-4'>
         Credentials & Education
       </h2>
 
@@ -12,12 +12,12 @@ const Certificados = () => (
         {certificaciones.map((cert) => (
           <div
             key={cert.id}
-            className='bg-slate-900/40 p-6 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition-all group flex flex-col justify-between'>
+            className='bg-[#141414] p-8 rounded-[2rem] border border-[#262626] hover:border-[#00E6FF]/30 transition-all group flex flex-col justify-between'>
             <div>
-              <span className='text-[10px] font-black uppercase tracking-widest text-purple-400 bg-purple-500/10 px-2 py-1 rounded'>
+              <span className='text-[10px] font-black uppercase tracking-widest text-[#00E6FF] bg-[#00E6FF]/5 px-2 py-1 rounded'>
                 {cert.academia}
               </span>
-              <h3 className='mt-4 text-lg font-bold text-white leading-tight group-hover:text-purple-300 transition-colors'>
+              <h3 className='mt-4 text-lg font-bold text-white leading-tight'>
                 {cert.titulo}
               </h3>
             </div>
@@ -25,8 +25,8 @@ const Certificados = () => (
               href={cert.link}
               target='_blank'
               rel='noopener noreferrer'
-              className='mt-6 text-[10px] font-black text-slate-500 hover:text-white uppercase tracking-tighter flex items-center gap-2'>
-              Verify PDF Document →
+              className='mt-8 text-[10px] font-black text-slate-500 hover:text-white uppercase tracking-widest flex items-center gap-2 transition-colors'>
+              Verify Document →
             </a>
           </div>
         ))}

@@ -6,13 +6,13 @@ import Certificados from './components/Certificados';
 
 const App = () => {
   return (
-    <div className='min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-purple-500/30'>
+    <div className='min-h-screen bg-[#0A0A0A] text-slate-100 selection:bg-[#00E6FF]/30'>
       <Header />
       <HabilidadesYIdiomas />
       <Proyectos />
       <Certificados />
-      <footer className='py-16 text-center text-slate-600 text-[9px] font-black tracking-[0.5em] uppercase border-t border-slate-900'>
-        © 2026 — Built with React & Tailwind
+      <footer className='py-20 text-center text-slate-700 text-[10px] font-black tracking-[0.5em] uppercase border-t border-[#141414]'>
+        © 2026 — Portfolio System
       </footer>
     </div>
   );

@@ -4,61 +4,62 @@ const Proyectos = () => {
   const listaProyectos = [
     {
       nombre: 'DataPulse',
-      desc: 'Dashboard interactivo premium desarrollado con React, TypeScript y D3.js. Visualización de datos complejos de mercado mediante gráficos dinámicos, inspirado en interfaces fintech de alto rendimiento.',
-      stack: ['React', 'TypeScript', 'D3.js', 'API Integration'],
+      desc: 'Dashboard interactivo premium con React, TypeScript y D3.js. Visualización avanzada de datos complejos mediante gráficos dinámicos.',
+      stack: ['React', 'TypeScript', 'D3.js'],
       link: 'https://data-pulse-ivory.vercel.app/',
-      color: 'border-sky-500/30',
+      accent: '#00E6FF',
     },
     {
       nombre: 'SmartShop',
-      desc: 'E-commerce de última generación con asistente de Inteligencia Artificial integrado. Enfoque en persistencia de datos, diseño moderno y asesoramiento automatizado para el usuario.',
-      stack: ['React', 'AI API', 'Redux', 'Data Persistence'],
+      desc: 'Plataforma e-commerce con asistente de Inteligencia Artificial integrado para asesoramiento en tiempo real.',
+      stack: ['React', 'AI Integration', 'Redux'],
       link: 'https://modern-ecommerce-react-ph12eex9c-christiamgsps-projects.vercel.app/',
-      color: 'border-purple-500/30',
+      accent: '#A855F7',
     },
     {
       nombre: 'OrganizeMe',
-      desc: 'Gestor de proyectos tipo Trello con arquitectura basada en componentes y bases de datos NoSQL. Permite una sincronización fluida y visualización de tareas en tiempo real.',
-      stack: ['React', 'NoSQL', 'Real-time', 'Components'],
+      desc: 'Aplicación de gestión de proyectos inspirada en Trello, diseñada para organizar tareas de forma visual y fluida.',
+      stack: ['React', 'NoSQL', 'Real-time'],
       link: 'https://organize-me-gules.vercel.app/',
-      color: 'border-indigo-500/30',
+      accent: '#6366F1',
     },
     {
       nombre: 'TareApp',
-      desc: 'Aplicación de productividad con enfoque en UI/UX minimalista. Desarrollada para garantizar una gestión de tareas rápida, eficiente y con una interfaz altamente funcional.',
-      stack: ['React', 'UI/UX', 'Hooks', 'Clean Code'],
+      desc: 'Gestor de tareas rápido, eficiente y altamente funcional, enfocado en una UI/UX limpia y minimalista.',
+      stack: ['React', 'Hooks', 'Clean UI'],
       link: 'https://christiamgsp.github.io/tareapp/',
-      color: 'border-slate-500/30',
+      accent: '#94A3B8',
     },
   ];
 
   return (
-    <section className='py-16'>
-      <div className='container mx-auto px-4 max-w-5xl'>
-        <div className='flex items-center gap-4 mb-12'>
+    <section className='py-16 bg-[#0A0A0A]'>
+      <div className='container mx-auto px-6 max-w-5xl'>
+        <div className='flex items-center gap-4 mb-14'>
           <h2 className='text-3xl font-black text-white tracking-tighter uppercase'>
-            Featured Work
+            Selected Projects
           </h2>
-          <div className='h-px flex-grow bg-slate-900'></div>
+          <div className='h-px flex-grow bg-[#262626]'></div>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           {listaProyectos.map((p) => (
             <div
               key={p.nombre}
-              className={`group bg-slate-900/50 p-8 rounded-3xl border ${p.color} hover:bg-slate-900 transition-all duration-500 flex flex-col justify-between`}>
+              className='group bg-[#141414] p-10 rounded-[2.5rem] border border-[#262626] flex flex-col justify-between hover:border-white/10 transition-all shadow-xl'>
               <div className='space-y-4'>
-                <h3 className='text-2xl font-black text-white group-hover:text-purple-400 transition-colors'>
+                <h3 className='text-3xl font-black text-white'>
                   {p.nombre}
+                  <span style={{ color: p.accent }}>.</span>
                 </h3>
                 <p className='text-slate-400 text-sm leading-relaxed'>
                   {p.desc}
                 </p>
-                <div className='flex flex-wrap gap-2 pt-2'>
+                <div className='flex flex-wrap gap-2'>
                   {p.stack.map((s) => (
                     <span
                       key={s}
-                      className='text-[10px] font-bold bg-slate-950 text-slate-500 px-2 py-1 rounded border border-slate-800 uppercase'>
+                      className='text-[9px] font-black bg-[#0A0A0A] text-slate-500 px-2 py-1 rounded border border-[#262626] uppercase'>
                       {s}
                     </span>
                   ))}
@@ -68,7 +69,7 @@ const Proyectos = () => {
                 href={p.link}
                 target='_blank'
                 rel='noreferrer'
-                className='mt-8 inline-flex items-center justify-center w-full py-3 bg-white text-black font-black text-xs uppercase tracking-widest rounded-xl hover:bg-purple-500 hover:text-white transition-all'>
+                className='mt-10 inline-flex items-center justify-center w-full py-4 bg-[#FF2D55] text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:brightness-110 hover:shadow-[0_0_20px_rgba(255,45,85,0.3)] transition-all'>
                 View Live Project
               </a>
             </div>
