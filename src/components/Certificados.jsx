@@ -1,49 +1,34 @@
 import React from 'react';
 import { certificaciones } from '../data';
 
-const TarjetaCertificado = ({ cert }) => (
-  <div className='bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-lg transition-shadow duration-300'>
-    <div>
-      <span className='text-xs font-bold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full'>
-        {cert.academia}
-      </span>
-      <h3 className='mt-3 text-xl font-bold text-slate-950 leading-tight'>
-        {cert.titulo}
-      </h3>
-      <p className='text-sm text-slate-500 mt-1'>Obtenido: {cert.fecha}</p>
-    </div>
-    <a
-      href={cert.link}
-      target='_blank'
-      rel='noopener noreferrer'
-      className='mt-5 inline-flex items-center text-sm font-semibold text-sky-700 hover:text-sky-900 group'>
-      Ver Título PDF
-      <svg
-        className='w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform'
-        fill='none'
-        viewBox='0 0 24 24'
-        stroke='currentColor'>
-        <path
-          strokeLinecap='round'
-          strokeLinejoin='round'
-          strokeWidth={2}
-          d='M14 5l7 7m0 0l-7 7m7-7H3'
-        />
-      </svg>
-    </a>
-  </div>
-);
-
 const Certificados = () => (
-  <section className='py-16 bg-slate-100/50'>
+  <section className='py-16'>
     <div className='container mx-auto px-4 max-w-5xl'>
-      <h2 className='text-3xl font-extrabold text-slate-950 tracking-tighter mb-10'>
-        Certificaciones Oficiales (PDF)
+      <h2 className='text-2xl font-black text-white tracking-tighter mb-10 uppercase border-l-4 border-purple-500 pl-4'>
+        Credentials & Education
       </h2>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
         {certificaciones.map((cert) => (
-          <TarjetaCertificado key={cert.id} cert={cert} />
+          <div
+            key={cert.id}
+            className='bg-slate-900/40 p-6 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition-all group flex flex-col justify-between'>
+            <div>
+              <span className='text-[10px] font-black uppercase tracking-widest text-purple-400 bg-purple-500/10 px-2 py-1 rounded'>
+                {cert.academia}
+              </span>
+              <h3 className='mt-4 text-lg font-bold text-white leading-tight group-hover:text-purple-300 transition-colors'>
+                {cert.titulo}
+              </h3>
+            </div>
+            <a
+              href={cert.link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-6 text-[10px] font-black text-slate-500 hover:text-white uppercase tracking-tighter flex items-center gap-2'>
+              Verify PDF Document →
+            </a>
+          </div>
         ))}
       </div>
     </div>
