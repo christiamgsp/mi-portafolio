@@ -9,6 +9,13 @@ const Header = () => {
     'Hola Christiam,\n\nHe visto tu portfolio...'
   );
   const mailtoLink = `mailto:christiamgsp@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+  const whatsappNumber = '34614589367';
+  const whatsappMessage = encodeURIComponent(
+    'Hola Christiam, vi tu portafolio y me gustaría contactarte.'
+  );
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+  const telefonoLink = 'tel:+34614589367';
 
   return (
     <header className='relative pt-12 md:pt-24 pb-12 overflow-hidden bg-[#0A0A0A]'>
@@ -72,10 +79,25 @@ const Header = () => {
                 <span className='w-2 h-2 rounded-full bg-[#00E6FF] shadow-[0_0_8px_#00E6FF]'></span>{' '}
                 GitHub
               </a>
+
+              <a
+                href={whatsappLink}
+                target='_blank'
+                rel='noreferrer'
+                className='group flex items-center gap-2 text-slate-400 hover:text-[#00E6FF] transition-all text-[10px] font-black uppercase tracking-[0.2em]'>
+                <span className='w-2 h-2 rounded-full bg-[#00E6FF] shadow-[0_0_8px_#00E6FF]'></span>{' '}
+                WhatsApp
+              </a>
+
+              <a
+                href={telefonoLink}
+                className='group flex items-center gap-2 text-slate-400 hover:text-white transition-all text-[10px] font-black uppercase tracking-[0.2em]'>
+                <span className='w-2 h-2 rounded-full bg-[#FF2D55] shadow-[0_0_8px_#FF2D55]'></span>{' '}
+                Teléfono
+              </a>
             </div>
           </div>
 
-          {/* Foto de Perfil */}
           <div className='shrink-0 order-1 md:order-2'>
             <div className='relative'>
               <div className='absolute -inset-4 border border-[#262626] rounded-full'></div>
