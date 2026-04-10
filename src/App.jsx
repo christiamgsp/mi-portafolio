@@ -12,7 +12,8 @@ const App = () => {
       <Proyectos />
       <Certificados />
       <footer className='py-20 text-center text-slate-700 text-[10px] font-black tracking-[0.5em] uppercase border-t border-[#141414]'>
-        © 2026 — Portfolio System
+        © 2026 — Diseño y desarrollo: Christiam Silva · Junior Frontend
+        Developer
       </footer>
     </div>
   );
