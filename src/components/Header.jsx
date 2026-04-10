@@ -82,7 +82,7 @@ const Header = () => {
               <div className='absolute -inset-1 border border-[#00E6FF]/20 rounded-full animate-pulse'></div>
               <div className='relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-[#141414] shadow-[0_0_50px_rgba(0,230,255,0.1)]'>
                 <img
-                  src='public\pdfs\foto-perfil.jpg'
+                  src='public/pdfs/foto-perfil.jpg'
                   alt='Christiam Silva'
                   className='w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-1000 scale-110 hover:scale-100'
                 />
