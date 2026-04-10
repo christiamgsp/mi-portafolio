@@ -3,7 +3,7 @@ import { perfil } from '../data';
 
 const Header = () => {
   const emailSubject = encodeURIComponent(
-    'Contacto Oportunidad Laboral - Full Stack Developer'
+    'Contacto Oportunidad Laboral - Junior Frontend Developer'
   );
   const emailBody = encodeURIComponent(
     'Hola Christiam,\n\nHe visto tu portfolio...'
@@ -57,7 +57,7 @@ const Header = () => {
                 Email
               </a>
               <a
-                href={perfil.linkedin}
+                href='https://www.linkedin.com/in/christiam-gabriel-silva-parra-8673a5402/'
                 target='_blank'
                 rel='noreferrer'
                 className='group flex items-center gap-2 text-slate-400 hover:text-[#00E6FF] transition-all text-[10px] font-black uppercase tracking-[0.2em]'>
@@ -97,4 +97,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;
