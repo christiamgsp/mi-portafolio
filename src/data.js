@@ -1,4 +1,3 @@
-// src/data.js
 export const perfil = {
   nombre: 'Christiam Gabriel Silva Parra',
   titulo: 'Frontend Engineer | AI Specialist | Bilingual (English C1)',
@@ -79,7 +78,7 @@ export const certificaciones = [
     titulo: 'Tailwind CSS',
     academia: 'Platzi',
     fecha: 'Agosto 2025',
-    link: '/pdfs/diploma-tailwindcss.pdf',
+    link: '/pdfs/diploma-tailwind-css.pdf',
     categoria: 'Design',
   },
   {
@@ -98,8 +97,40 @@ export const certificaciones = [
     link: '/pdfs/diploma-gitgithub.pdf',
     categoria: 'Tools',
   },
-];
+  {
+    id: 12,
+    titulo: 'Angular Framework',
+    academia: 'Platzi',
+    fecha: '2026',
+    link: '/pdfs/angular.pdf',
+    categoria: 'Frontend',
+  },
+  {
+    id: 13,
+    titulo: 'Node.js Mastery',
+    academia: 'Platzi',
+    fecha: '2026',
+    link: '/pdfs/node.pdf',
+    categoria: 'Backend',
+  },
 
+  {
+    id: 14,
+    titulo: 'Redux Profesional',
+    academia: 'Platzi',
+    fecha: '2026',
+    link: '/pdfs/diploma-react-redux-profesional.pdf',
+    categoria: 'React',
+  },
+  {
+    id: 15,
+    titulo: 'Vue.js',
+    academia: 'Platzi',
+    fecha: '2026',
+    link: '/pdfs/diploma-testing-vuejs.pdf ',
+    categoria: 'Frontend',
+  },
+];
 export const proyectos = [
   {
     id: 1,
